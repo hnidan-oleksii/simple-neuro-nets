@@ -1,5 +1,7 @@
 {
     "files": [
         "widget.py",
+        "functions/activation/log.py",
+        "functions/activation/sigmoid.py",
     ]
 }
