@@ -1,6 +1,7 @@
 {
     "files": [
         "widget.py",
+        "functions/helper_functions.py",
         "functions/activation/log.py",
         "functions/activation/sigmoid.py",
         "functions/loss/mae.py",
