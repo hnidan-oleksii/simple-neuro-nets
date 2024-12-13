@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>864</width>
+    <height>567</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>864</width>
+    <height>567</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>864</width>
+    <height>567</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QTabWidget" name="tab_widget">
+   <property name="geometry">
+    <rect>
+     <x>-4</x>
+     <y>-1</y>
+     <width>871</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>871</width>
+     <height>571</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>871</width>
+     <height>571</height>
+    </size>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="parameters_tab">
+    <attribute name="title">
+     <string>Parameters</string>
+    </attribute>
+    <widget class="QWidget" name="formLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>9</y>
+       <width>291</width>
+       <height>521</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="parameters_form_layout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="data_set_label">
+        <property name="text">
+         <string>Data set</string>
+        </property>
+        <property name="buddy">
+         <cstring>data_set_combo_box</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="data_set_combo_box">
+        <item>
+         <property name="text">
+          <string>Numbers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>English letters</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Custom</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="inputs_label">
+        <property name="text">
+         <string>Number of inputs</string>
+        </property>
+        <property name="buddy">
+         <cstring>inputs_spin_box</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="inputs_spin_box">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>10000000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="outputs_label">
+        <property name="text">
+         <string>Number of outputs</string>
+        </property>
+        <property name="buddy">
+         <cstring>outputs_spin_box</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QSpinBox" name="outputs_spin_box">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>10000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="hidden_layers_label">
+        <property name="text">
+         <string>Hidden layers</string>
+        </property>
+        <property name="buddy">
+         <cstring>hidden_layers_spin_box</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QSpinBox" name="hidden_layers_spin_box">
+        <property name="maximum">
+         <number>8</number>
+        </property>
+        <property name="value">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <layout class="QGridLayout" name="hidden_layers_neurons_grid_layout">
+        <item row="2" column="0">
+         <widget class="QSpinBox" name="layer_5_spin_box">
+          <property name="maximum">
+           <number>999</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QSpinBox" name="layer_3_spin_box">
+          <property name="maximum">
+           <number>999</number>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QSpinBox" name="layer_7_spin_box">
+          <property name="maximum">
+           <number>999</number>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSpinBox" name="layer_8_spin_box">
+          <property name="maximum">
+           <number>999</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="layer_4_spin_box">
+          <property name="maximum">
+           <number>999</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSpinBox" name="layer_6_spin_box">
+          <property name="maximum">
+           <number>999</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QSpinBox" name="layer_1_spin_box">
+          <property name="maximum">
+           <number>999</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSpinBox" name="layer_2_spin_box">
+          <property name="maximum">
+           <number>999</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="hidden_layers_neurons_label">
+        <property name="text">
+         <string>Number of neurons in hidden layers</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="loss_function_label">
+        <property name="text">
+         <string>Loss function</string>
+        </property>
+        <property name="buddy">
+         <cstring>loss_function_combo_box</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="activation_function_label">
+        <property name="text">
+         <string>Activation function</string>
+        </property>
+        <property name="buddy">
+         <cstring>activation_function_combo_box</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QComboBox" name="loss_function_combo_box">
+        <item>
+         <property name="text">
+          <string>mse</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>mae</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QComboBox" name="activation_function_combo_box">
+        <item>
+         <property name="text">
+          <string>sigmoid</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>logarithmic</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="overall_neurons_label">
+        <property name="text">
+         <string>Number of neurons</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLabel" name="overall_neurons_number_label">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="overall_weights_label">
+        <property name="text">
+         <string>Number of weights (including biases)</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QLabel" name="overall_weigts_number_label">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="learning_rate_label">
+        <property name="text">
+         <string>Learning Rate</string>
+        </property>
+        <property name="buddy">
+         <cstring>learning_rate_double_spin_box</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QLabel" name="epochs_number_label">
+        <property name="text">
+         <string>Number of epochs</string>
+        </property>
+        <property name="buddy">
+         <cstring>epochs_number_spin_box</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QDoubleSpinBox" name="learning_rate_double_spin_box">
+        <property name="decimals">
+         <number>6</number>
+        </property>
+        <property name="minimum">
+         <double>0.000001000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.000001000000000</double>
+        </property>
+        <property name="stepType">
+         <enum>QAbstractSpinBox::StepType::DefaultStepType</enum>
+        </property>
+        <property name="value">
+         <double>0.010000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1">
+       <widget class="QSpinBox" name="epochs_number_spin_box">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>1000000000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="weights_init_type_lable">
+        <property name="text">
+         <string>Weights init type</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QComboBox" name="weights_init_type_combo_box">
+        <item>
+         <property name="text">
+          <string>xavier</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>genetic</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>uniform</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>constant</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>305</x>
+       <y>10</y>
+       <width>551</width>
+       <height>521</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="network_overview_vertical_layout">
+      <item>
+       <widget class="QLabel" name="network_structure_lable">
+        <property name="text">
+         <string>Network structure</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="custom_data_tab">
+    <attribute name="title">
+     <string>Custom data</string>
+    </attribute>
+    <widget class="QPushButton" name="add_row_button">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>10</y>
+       <width>87</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Add row</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="custom_data_table">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>51</y>
+       <width>851</width>
+       <height>481</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="remove_row_button">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>10</y>
+       <width>111</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Remove row</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="custom_data_division_ratio_label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>591</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ratio of input data division is the following: train - 60%, validation - 30%, testing - 10%</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignBottom|Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="buddy">
+      <cstring>add_row_button</cstring>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="save_data_button">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>10</y>
+       <width>41</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Save</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="trainint_tab">
+    <attribute name="title">
+     <string>Training</string>
+    </attribute>
+    <widget class="QPushButton" name="train_button">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>87</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Train</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="training_graph_label">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>57</y>
+       <width>851</width>
+       <height>481</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="testing_tab">
+    <attribute name="title">
+     <string>Testing</string>
+    </attribute>
+    <widget class="QPushButton" name="test_button">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>87</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Test</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="test_table">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>851</width>
+       <height>481</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="accuracy_label">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>10</y>
+       <width>66</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Accuracy</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="accuracy_value_label">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>10</y>
+       <width>111</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="predicting_tab">
+    <attribute name="title">
+     <string>Predicting</string>
+    </attribute>
+    <widget class="QPushButton" name="predict_button">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>87</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Predict</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="predictions_table">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>851</width>
+       <height>481</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
