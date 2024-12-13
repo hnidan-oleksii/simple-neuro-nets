@@ -3,5 +3,7 @@
         "widget.py",
         "functions/activation/log.py",
         "functions/activation/sigmoid.py",
+        "functions/loss/mae.py",
+        "functions/loss/mse.py",
     ]
 }
